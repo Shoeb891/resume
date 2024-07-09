@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohd Shoeb Mohiuddin} \\ \vspace{1pt}
+    \small+919550471676 $|$ \href{mailto:shoebm891@gmail.com}{\underline{shoebm891@gmail.com}} $|$ 
+    \href{https://linkedinhttps://www.linkedin.com/in/shoeb-mohiuddin/.com/in/...}{\underline{linkedin.com/in/shoeb}} $|$
+    \href{https://github.com/Shoeb891}{\underline{github.com/Shoeb}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lords Institute of Engineering and Technology}{Hyderabad, India}
+      {Bachelor of Engineering in Information Technology, CGPA - 8.47}{2021 -- 2025}
+      \resumeSubheading
+      {Board of Intermediate Education}{Hyderabad, India}
+      {Higher Secondary Education}{2019 -- 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Machine Learning Intern}{August 2023 -- September 2023}
+      {Triad Techno Services}{Hyderabad}
+      \resumeItemListStart
+        \resumeItem{Learned the basics of machine learning}
+        \resumeItem{Worked on Diabetic Retinopathy Detection from Eye Fundus Images with Parameter Tuning for Convolutional Neural Networks}
+      \resumeItemListEnd
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+    {\textbf{PEANut (Assessment Platform)} $|$ \emph{Next.js, Prisma ORM, TypeScript}}{September 2023 -- January 2024}
+    \resumeItemListStart
+        \resumeItem{Developed an interactive quiz assessment platform with Next.js for the frontend}
+        \resumeItem{Implemented Prisma ORM for robust database management}
+        \resumeItem{Utilized PlanetScale DB for scalable storage solutions}
+        \resumeItem{Established secure token-based authentication for reliable access control}
+        \resumeItem{Enabled teachers to create and manage quizzes effortlessly}
+        \resumeItem{Provided a user-friendly interface for students to access and participate in quizzes}
+        \resumeItem{Collaborated with a team to ensure seamless quiz creation and administration}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{Gfibot GitHub Bot} $|$ \emph{Node.js, JavaScript, Twitter API, Express.js, GitHub Webhooks, Smee.io}}{June 2024}
+    \resumeItemListStart
+        \resumeItem{Developed a GitHub bot and associated Twitter handle to engage new contributors}
+        \resumeItem{Utilized Node.js and Express.js for backend development, integrating the Twitter API for social media interactions}
+        \resumeItem{Implemented GitHub Webhooks and Smee.io to handle real-time notifications and updates}
+        \resumeItem{Highlighted "good first issue" tasks to attract and retain new contributors}
+        \resumeItem{Filtered GitHub notifications to reduce clutter and help users identify relevant opportunities}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{File Sharing Site} $|$ \emph{Express, MongoDB}}{July 2024}
+    \resumeItemListStart
+        \resumeItem{Developed a simple file sharing site with password-protected files and a download count tracker}
+        \resumeItem{Utilized Express for the backend and MongoDB for database management}
+        \resumeItem{Included features for password protection and download tracking}
+        \resumeItem{Demonstrated essential backend development skills}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{Chrome Extension for Storing Bookmarks} $|$ \emph{HTML, CSS, JavaScript}}{June 2023}
+    \resumeItemListStart
+        \resumeItem{Developed a Chrome extension to efficiently store and organize bookmarks}
+        \resumeItem{Utilized the Chrome Extension API for browser functionality and storage}
+        \resumeItem{Implemented using HTML, CSS, and JavaScript}
+        \resumeItem{GitHub Link: \url{https://github.com/Shoeb891/Chrome-extension}}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL, JavaScript, TypeScript, HTML/CSS, } \\
+     \textbf{Frameworks}{: React, Next.js, Node.js} \\
+     \textbf{Developer Tools}{: Git, Prisma ORM, Docker, VS Code, Visual Studio, IntelliJ} \\
+     \textbf{Libraries}{: pandas, NumPy}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
